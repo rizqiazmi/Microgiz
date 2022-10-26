@@ -1,0 +1,36 @@
+.row{
+  content: "";
+  display: table;
+  clear: both;
+}
+.title{
+  color: #98A8F8;
+  font-size: 40px;
+  text-align: Left;
+}
+.page{
+  background: #FAF7F0;
+}
+.column{
+  float: left;
+  background-color: #FAF7F0 ;
+  margin: 10px;
+  width: 300px;
+  border: solid #98A8F8;
+  border-radius: 10px;
+  
+}
+.btn{
+  margin-left: 4%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background: #98A8F8;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+  transition: .3s;
+}
