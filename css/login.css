@@ -13,25 +13,21 @@ body{
     margin: auto;
     width: 500px;
     max-width: 90%;
-}
-.container form{
-    width: 100%;
+    background-color: #FAF7F0;
     height: 100%;
+    outline-color: #98A8F8 ;
+    outline-width: 1px;
+    outline-style: solid;
     padding: 20px;
-    background: white;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,.3);
 }
-.container form h1{
-    text-align: center;
-    margin-bottom: 24px;
-    color: #222;
-}
+
 .container form .form-control{
     width: 100%;
     height: 40px;
     background: white;
-    border-radius: 20px;
+    border-radius: 4px;
     border: 1px solid silver;
     margin: 10px 0 18px 0;
     padding: 0 10px;
@@ -43,7 +39,7 @@ body{
     height: 34px;
     border: none;
     outline: none;
-    background: #27a327;
+    background: #98A8F8;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
@@ -53,4 +49,9 @@ body{
 }
 .container form .btn:hover{
     opacity: .7;
+}
+.login-title{
+    color: #98A8F8;
+    font-size: 40px;
+    text-align: center;
 }
