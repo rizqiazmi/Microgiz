@@ -1,0 +1,37 @@
+.container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+    background-color: #FAF7F0;
+    height: 100%;
+    outline-color: #98A8F8 ;
+    outline-width: 1px;
+    outline-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+}
+.title{
+    color: #98A8F8;
+    font-size: 40px;
+    text-align: center;
+}
+.questionbox{
+    height:100px;
+    width: 500px;
+    background-color:#FAF7F0;
+}
+.btn{
+    margin-left: 90%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: #98A8F8;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    transition: .3s;
+}
