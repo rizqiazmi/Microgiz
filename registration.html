@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
     <title>Register</title>
 </head>
 <body>
-    <form action="">
-        <h1>Register</h1>
-        <div>
-            <label for="">Nama : </label>
-            <input type="text" name="nama" style="border:solid rebeccapurple 1px">
-        </div>
-        <div>
-            <label for="">Email : </label>
-            <input type="text" name="email">
-        </div>
-        <div>
-            <label for="">Password : </label>
-            <input type="password" name="password">
-        </div>
-        <div>
-            <label for="">Repeat Password : </label>
-            <input type="password" name="password"> 
-        </div>
-        <button type="submit">Register</button>
-        <p> Sudah punya akun?
-            <a href="login.html">Login di sini</a>
-          </p>
-    </form>
+    <div class="container">
+        <form action="">
+            <p class="register-title">REGISTER</p>
+            <div class="form-group">
+                <label class="label-form" for="">Nama : </label>
+                <input type="text" class="form-control" name="nama" style="border:solid #98A8F8 1px">
+            </div>
+            <div class="form-group">
+                <label for="">Email : </label>
+                <input type="text" class="form-control" name="email" style="border:solid #98A8F8 1px">
+            </div>
+            <div class="form-group">
+                <label for="">Password : </label>
+                <input type="password" class="form-control" name="password" style="border:solid #98A8F8 1px">
+            </div>
+            <div class="form-group">
+                <label for="">Repeat Password : </label>
+                <input type="password" class="form-control" name="password" style="border:solid #98A8F8 1px"> 
+            </div>
+            <input href="login.html" class="btn" type="button" value="Register">
+            <div class="link-register">
+                Sudah punya akun? <a href="login.html">Login</a>
+            </div>
+        </form>
+        
+    </div>
 </body>
 </html>
