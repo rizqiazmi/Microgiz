@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONSULTASI SECARA OFLLINE</title>
+</head>
+<body>
+    <h1>KONSULTASI DENGAN AHLI GIZI SECARA OFLINE</h1>
+    <form action="proses.php" method="get">
+        <br>
+        <label>Jadwal Konsultasi Gizi :
+            Konsultasi Luring di Departemen Microgiz+
+            <br>Konselor: Ahli gizi 
+            <br>Senin & Jumat 09.00-12.00 WIB (1 jam)
+            <br>Hari libur nasional, selasa - kamis, & cuti bersama tutup layanan
+            <br>Tarif: Rp120.000/orang/jam</label>
+        <br>
+        <br>
+        <label>NAMA LENGKAP :</label>
+        <input>
+        <br>
+        <br>
+        <label>UMUR</label>
+        <input>
+        <div>
+            <br>
+            <label>JENIS KELAMIN :
+                <br>
+              <input type="radio" name="choice-radio">
+              Pria
+            </label>
+            <label>
+              <input type="radio" name="choice-radio">
+              Wanita
+            </label>
+          </div>
+        <p>KOTA YANG TERSEDIA AHLI GIZI 
+        <select name='KOTA YANG TERSEDIA AHLI GIZI'>
+          <option value='SURABAYA'>SURABAYA</option>
+          <option value='SIDOARJO'>SIDOARJO</option>
+          <option value='MALANG'>MALANG</option>
+          <option value='BLITAR'>BLITAR</option>
+          <option value='PACET'>PACET</option>
+        </select>
+        </p>
+        <label>PILIH JADWAL KONSULTASI :
+            <br>
+          <input type="radio" name="choice-radio">
+          senin 09.00~10.00<br>
+        </label>
+        <label>
+          <input type="radio" name="choice-radio">
+          senin 10.00~11.00<br>
+        </label>
+        <input type="radio" name="choice-radio">
+          senin 11.00~12.00<br>
+        </label>
+        <label>
+          <input type="radio" name="choice-radio">
+          jumat 09.00~10.00<br>
+        </label>
+        <label>
+            <input type="radio" name="choice-radio">
+            jumat 10.00~11.00<br>
+          </label>
+          <input type="radio" name="choice-radio">
+            jumat 11.00~12.00
+          </label>
+          <label>
+            <br>
+            <br>
+        <r>METODE PEMBAYARAN
+            <select name='METODE PEMBAYARAN MENGGUNAKAN'>
+              <option value='BANK BCA'>BANK BCA</option>
+              <option value='OVO PAYMENT'>OVO PAYMENT</option>
+              <option value='BANK BRI'>BANK BRI</option>
+              <option value='SHOPPEEPAY'>SHOPPEEPAY</option>
+              <option value='BANK MANDIRI'>BANK MANDIRI</option>
+            </select>
+        </r>
+        <label>MASUKAN NO REKENING BANK YANG DIGUNAKAN</label>
+        <input>
+        <br>
+        <input type='submit' name='tombol' value='kirim' />
+  </form>
+  </body>
