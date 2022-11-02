@@ -21,7 +21,7 @@ body {
     font-weight: 800;
     float: left;
     font-family: courier;
-    color: #364f6b;
+    color: #98A8F8;
 }
 
 .menu {
@@ -36,9 +36,9 @@ nav {
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background: #FFFFFF;
+    background: #FAF7F0;
     z-index: 1;
-    border-bottom:1px solid #364f6b;
+    border-bottom:1px solid #98A8F8;
 }
 
 nav ul {
@@ -79,7 +79,7 @@ section {
     font-size: 20px;
     font-weight: bold;
     font-family: 'comic sans ms';
-    color: #364f6b;
+    color: #98A8F8;
 }
 
 h2 {
@@ -87,7 +87,7 @@ h2 {
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #98A8F8;
     width: 100%;
     line-height: 50px;
 }
@@ -97,7 +97,7 @@ a.tbl-biru {
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: #FFFFFF;
+    color: #FAF7F0;
     cursor: pointer;
     font-weight: bold;
 }
@@ -112,7 +112,7 @@ a.tbl-pink {
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: #FFFFFF;
+    color: #FAF7F0;
     cursor: pointer;
     font-weight: bold;
 }
@@ -154,7 +154,7 @@ p {
     font-weight: 800;
     font-size: 25px;
     text-align: center;
-    color: #364f6b;
+    color: #98A8F8;
 }
 
 .partner-list {
@@ -197,7 +197,7 @@ h3 {
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #98A8F8;
     width: 100%;
     line-height: 50px;
 }
