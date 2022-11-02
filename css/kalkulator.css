@@ -33,3 +33,21 @@ color: white;
 border-radius: 4px;
 transition: .3s;
 }
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #98A8F8;
+  }
+  
+  .menu {
+    float: right;
+  }
+  
