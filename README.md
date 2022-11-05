@@ -12,4 +12,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique ullamco
 * Suspendisse venenatis nibh blandit nisi pellentesque posuere ut ut nulla.
 * Praesent ut nisi interdum enim rhoncus pharetra.
 # View Website
-["tile as link"](https://www.youtube.com/watch?v=uvTcd-VlM64))
+[microgiz-delta.vercel.app/](microgiz-delta.vercel.app/)
