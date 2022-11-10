@@ -1,4 +1,4 @@
-class Admin extends People{
+class Admin extends User{
     constructor(username,name,email,password,phone,access){
     super(username,name,email,password,phone);
         this.access=access;

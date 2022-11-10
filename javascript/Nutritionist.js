@@ -1,4 +1,4 @@
-class Nutritionist extends People {
+class Nutritionist extends User {
     constructor(username,name,email,password,phone){
     super(username,name,email,password,phone);
     }
