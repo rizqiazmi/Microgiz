@@ -1,31 +1,19 @@
 <?php
 
 $name = $_POST['namaLengkap'];
-echo "<pre>";
-var_dump($name);
-echo "</pre>";
+echo $name;
 
 $age = $_POST['umur'];
-echo "<pre>";
-var_dump($age);
-echo "</pre>";
+echo $age;
 
 $sex = $_POST['jenisKelamin'];
-echo "<pre>";
-var_dump($sex);
-echo "</pre>";
+echo $sex;
 
 $schedule = $_POST['jadwal'];
-echo "<pre>";
-var_dump($schedule);
-echo "</pre>";
+echo $schedule;
 
 $payments = $_POST['pembayaran'];
-echo "<pre>";
-var_dump($name);
-echo "</pre>";
+echo $payments;
 
 $accNumb = $_POST['nomorRekening'];
-echo "<pre>";
-var_dump($name);
-echo "</pre>";
+echo $accNumb;
