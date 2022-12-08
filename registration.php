@@ -10,7 +10,7 @@
 <body>
     <div class="container">
             
-        <form action="" onsubmit="validateAndSend()">
+        <form action="php/registration.php" method="post">
             <p class="register-title">REGISTER</p> 
             <div class="form-group">
                 <label class="label-form" for="">Nama : </label>
@@ -36,6 +36,6 @@
         </form>
 
     </div>
-    <script src="javascript/submit.js">    </script>
+    <!-- <script src="javascript/submit.js">    </script> -->
 </body>
 </html>
