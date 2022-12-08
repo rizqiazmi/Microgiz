@@ -1,19 +1,19 @@
 <?php
 
 $name = $_POST['namaLengkap'];
-echo $name;
+echo "namanya" + $name;
 
 $age = $_POST['umur'];
-echo $age;
+echo "umurnya" + $age;
 
 $sex = $_POST['jenisKelamin'];
-echo $sex;
+echo "dia" + $sex;
 
 $schedule = $_POST['jadwal'];
-echo $schedule;
+echo "waktu" + $schedule;
 
 $payments = $_POST['pembayaran'];
-echo $payments;
+echo "bayar pake" + $payments;
 
 $accNumb = $_POST['nomorRekening'];
-echo $accNumb;
+echo "nomernya" + $accNumb;
