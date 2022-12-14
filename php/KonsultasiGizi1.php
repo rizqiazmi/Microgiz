@@ -1,6 +1,5 @@
 <?php
-
-class login {
+class KonsulatsiGizi1 {
   // Properties
   public $name;
   public $color;
@@ -13,10 +12,9 @@ class login {
     return $this->name;
   }
 }
-
-// instances of the class login
-$apple = new LOGIN();
-$banana = new LOGIN();
+// instances of the class KonsultasiGizi1
+$apple = new KonsultasiGizi1();
+$banana = new KonsultasiGizi1();
 $apple->set_name('Apple');
 $banana->set_name('Banana');
 
@@ -24,14 +22,4 @@ $banana->set_name('Banana');
 echo "Name: " . $apple->get_name();
 echo "<br>";
 echo "Color: " . $apple->get_color();
-
-// $regForm = $_POST['username'];
-// $user = $_POST['username'];
-// $password = $_POST['password'];
-// echo $user."</br>";
-// echo $password."</br>";
-// echo $passwordAgain"</br>";
-// echo"<pre>";
-// var_dump($regForm);
-// echo "</pre>";
 ?>

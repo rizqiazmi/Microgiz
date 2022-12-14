@@ -1,19 +1,31 @@
 <?php
+class KonsultasiGiziOnline {
+  // Properties
+  public $name;
+  public $color;
 
+  // Methods
+  function set_name($name) {
+    $this->name = $name;
+  }
+  function get_name() {
+    return $this->name;
+  }
+}
+
+// instances of the class KonsultasiGiziOnline
 $name = $_POST['namaLengkap'];
-echo "namanya" + $name;
-
 $age = $_POST['umur'];
-echo "umurnya" + $age;
-
 $sex = $_POST['jenisKelamin'];
-echo "dia" + $sex;
-
 $schedule = $_POST['jadwal'];
-echo "waktu" + $schedule;
-
 $payments = $_POST['pembayaran'];
-echo "bayar pake" + $payments;
-
 $accNumb = $_POST['nomorRekening'];
+
+// Output
+echo "namanya" + $name;
+echo "umurnya" + $age;
+echo "dia" + $sex;
+echo "waktu" + $schedule;
+echo "bayar pake" + $payments;
 echo "nomernya" + $accNumb;
+?>
