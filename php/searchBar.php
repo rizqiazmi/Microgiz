@@ -1,26 +1,28 @@
 <?php
 class searchBar {
   // Properties
-  public $name;
-  public $color;
+  public $pencarian;
 
-  // Methods
-  function set_name($name) {
-    $this->name = $name;
+  // Methods set & get
+  function set_pencarian($pencarian) {
+    $this->pencarian = $pencarian;
   }
-  function get_name() {
-    return $this->name;
+  function get_pencarian() {
+    return $this->pencarian;
   }
 }
 
 // instances of the class searchBar
-$apple = new searchBar();
-$banana = new searchBar();
-$apple->set_name('Apple');
-$banana->set_name('Banana');
+$placeholder = new searchBar();
+$icon = new searchBar();
+
+// set variable & name
+$placeholder->set_pencarian('search bar');
+$icon->set_pencarian('icon');
 
 // Output
-echo "Name: " . $apple->get_name();
+echo "Placeholder: " . $placeholder->get_pencarian();
 echo "<br>";
-echo "Color: " . $apple->get_color();
+echo "icon: " . $icon->get_pencarian();
+echo "<br>";
 ?>

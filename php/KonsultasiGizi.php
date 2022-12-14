@@ -1,26 +1,23 @@
 <?php
 class KonsultasiGizi {
   // Properties
-  public $name;
-  public $color;
+  public $konsultasi;
 
-  // Methods
-  function set_name($name) {
-    $this->name = $name;
+  // Methods set & get
+  function set_konsultasi($konsultasi) {
+    $this->konsultasi = $konsultasi;
   }
-  function get_name() {
-    return $this->name;
+  function get_konsultasi() {
+    return $this->konsultasi;
   }
 }
 
 // instances of the class KonsultasiGizi
-$apple = new KonsultasiGizi();
-$banana = new KonsultasiGizi();
-$apple->set_name('Apple');
-$banana->set_name('Banana');
+$pertanyaan = new KonsultasiGizi();
+
+// set variable & name
+$pertanyaan->set_konsultasi('Your Question?');
 
 // Output
-echo "Name: " . $apple->get_name();
-echo "<br>";
-echo "Color: " . $apple->get_color();
+echo "Label: " . $pertanyaan->get_konsultasi();
 ?>

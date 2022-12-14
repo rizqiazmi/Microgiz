@@ -2,28 +2,37 @@
 
 class login {
   // Properties
-  public $name;
-  public $color;
+  public $form;
 
-  // Methods
-  function set_name($name) {
-    $this->name = $name;
+  // Methods set & get
+  function set_form($form) {
+    $this->form = $form;
   }
-  function get_name() {
-    return $this->name;
+  function get_form() {
+    return $this->form;
   }
 }
 
 // instances of the class login
-$apple = new LOGIN();
-$banana = new LOGIN();
-$apple->set_name('Apple');
-$banana->set_name('Banana');
+$LoginTittle = new login();
+$email = new login();
+$password = new login();
+$register = new login();
+
+// set variable & name
+$LoginTittle->set_form('JinDoe');
+$email->set_form('JinDoe@gmail.com');
+$password->set_form('JinDoe12');
+$register->set_form('Register');
 
 // Output
-echo "Name: " . $apple->get_name();
+echo "Login: " . $LoginTittle->get_form();
 echo "<br>";
-echo "Color: " . $apple->get_color();
+echo "Email: " . $email->get_form();
+echo "<br>";
+echo "Password: " . $password->get_form();
+echo "<br>";
+echo "Register: " . $register->get_form();
 
 // $regForm = $_POST['username'];
 // $user = $_POST['username'];
