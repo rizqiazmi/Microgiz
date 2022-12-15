@@ -36,6 +36,6 @@
         </form>
 
     </div>
-    <!-- <script src="javascript/submit.js">    </script> -->
+    <script src="javascript/submit.js">    </script>
 </body>
 </html>
