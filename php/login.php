@@ -22,12 +22,9 @@ $email->set_form('aykay@gmail.com');
 $password->set_form('Aykayy');
 $register->set_form('Register');
 
-echo "Login: " . $LoginTittle->get_form();
-echo "<br>";
-echo "Email: " . $email->get_form();
-echo "<br>";
-echo "Password: " . $password->get_form();
-echo "<br>";
+echo "Login: " . $LoginTittle->get_form() . "<br>";
+echo "Email: " . $email->get_form() . "<br>";
+echo "Password: " . $password->get_form() . "<br>";
 echo "Register: " . $register->get_form();
 
 // $regForm = $_POST['username'];

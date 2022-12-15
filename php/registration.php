@@ -22,22 +22,17 @@ $register = new registration();
 
 
 $registerTittle->set_pendaftaran('Register Tittle');
-$name->set_pendaftaran('Nama');
-$email->set_pendaftaran('Email');
-$password->set_pendaftaran('Password');
-$repeatPassowrd->set_pendaftaran('Repeat Password');
+$name->set_pendaftaran('Aykay');
+$email->set_pendaftaran('aykay@gmail.com');
+$password->set_pendaftaran('aykay anti NT');
+$repeatPassowrd->set_pendaftaran('aykay anti NT');
 $register->set_pendaftaran('Sudah Punya Akun?');
 
 
-echo "Registration Tittle: " . $registerTittle->get_pendaftaran();
-echo "<br>";
-echo "Name: " . $name->get_pendaftaran();
-echo "<br>";
-echo "Email: " . $email->get_pendaftaran();
-echo "<br>";
-echo "Password: " . $password->get_pendaftaran();
-echo "<br>";
-echo "Repeat Passowrd: " . $repeatPassowrd->get_pendaftaran();
-echo "<br>";
+echo "Registration Tittle: " . $registerTittle->get_pendaftaran() . "<br>";
+echo "Name: " . $name->get_pendaftaran() . "<br>";
+echo "Email: " . $email->get_pendaftaran() . "<br>";
+echo "Password: " . $password->get_pendaftaran() . "<br>";
+echo "Repeat Passowrd: " . $repeatPassowrd->get_pendaftaran() . "<br>";
 echo "register: " . $register->get_pendaftaran();
 ?>
