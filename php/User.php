@@ -1,0 +1,27 @@
+<?php
+class User{
+    public $username;
+    public $name;
+    private $email;
+    private $password;
+    private $phone
+
+
+    function __construct($emaill, $passwordd){
+        $this->email = $emaill;
+        $this->password = $passwordd;
+
+    }
+    function
+
+    function login(){
+        echo "login";
+    }
+
+    function register(){
+        echo "Email: ".$this->email. "</br>";
+        echo "Password: ".$this->password. "</br>";
+    }
+}
+
+?>
