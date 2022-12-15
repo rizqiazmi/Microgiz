@@ -17,9 +17,9 @@ $password = new login();
 $register = new login();
 
 
-$LoginTittle->set_form('JinDoe');
-$email->set_form('JinDoe@gmail.com');
-$password->set_form('JinDoe12');
+$LoginTittle->set_form('aykay');
+$email->set_form('aykay@gmail.com');
+$password->set_form('Aykayy');
 $register->set_form('Register');
 
 echo "Login: " . $LoginTittle->get_form();
