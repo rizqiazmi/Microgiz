@@ -1,38 +1,26 @@
 <?php
-class registration {
+$nama  = $_POST['nama'];
+$email = $_POST['email'];
+$password_register = $_POST['password'];
 
-  public $pendaftaran;
 
+$servername = "localhost";
+$userDb = "root";
+$passDb = "";
+$database = "test";
 
-  function set_pendaftaran($pendaftaran) {
-    $this->pendaftaran = $pendaftaran;
-  }
-  function get_pendaftaran() {
-    return $this->pendaftaran;
-  }
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$database;", $userDb, $passDb);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+
+  $sql = "INSERT INTO register (nama, email, password)
+  VALUES ('$nama', '$email', '$password_register')";
+  // use exec() because no results are returned
+  $conn->exec($sql);
+  echo "New record created successfully";
+  echo "<script>window.location.href = '/microgiz/login.html'</script>";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
 }
-
-
-$registerTittle = new registration();
-$name = new registration();
-$email = new registration();
-$password = new registration();
-$repeatPassowrd = new registration();
-$register = new registration();
-
-
-$registerTittle->set_pendaftaran('Register Tittle');
-$name->set_pendaftaran('Aykay');
-$email->set_pendaftaran('aykay@gmail.com');
-$password->set_pendaftaran('aykay anti NT');
-$repeatPassowrd->set_pendaftaran('aykay anti NT');
-$register->set_pendaftaran('Sudah Punya Akun?');
-
-
-echo "Registration Tittle: " . $registerTittle->get_pendaftaran() . "<br>";
-echo "Name: " . $name->get_pendaftaran() . "<br>";
-echo "Email: " . $email->get_pendaftaran() . "<br>";
-echo "Password: " . $password->get_pendaftaran() . "<br>";
-echo "Repeat Passowrd: " . $repeatPassowrd->get_pendaftaran() . "<br>";
-echo "register: " . $register->get_pendaftaran();
-?>
