@@ -17,6 +17,9 @@ class User{
         echo "login";
     }
 
+    function createUser(){
+        
+    }
     function register(){
         echo "Email : ".$this->email. "</br>";
         echo "Password : ".$this->password. "</br>";
