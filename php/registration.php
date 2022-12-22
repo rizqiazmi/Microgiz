@@ -1,4 +1,5 @@
 <?php
+require("User.php");
 $nama  = $_POST['nama'];
 $email = $_POST['email'];
 $password_register = $_POST['password'];
