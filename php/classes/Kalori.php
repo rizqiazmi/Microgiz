@@ -7,7 +7,7 @@ class Kalori{
     public $glukosa;
     public $natrium;
 
-    function __construct($prote, $Total, $kalori, $glukosa, $natrium)
+    function __construct($prote, $total, $kalori, $glukosa, $natrium)
     {
         $this->protein = $protein;
         $this->TotalLemak = $TotalLemak;
