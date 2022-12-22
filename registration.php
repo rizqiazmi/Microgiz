@@ -46,10 +46,10 @@
         <td>password</td>
     </tr>";
 
-    foreach (User::getUser() as $row);
+    foreach (User::getUser() as $row):
     echo"<tr><td>".$row['user']."<td><td>".$row['username']."<tr><td>".$row['password'];
-endforeach;
-echo "</table>";
+    endforeach;
+    echo "</table>";
 ?>
 </body>
 </html>

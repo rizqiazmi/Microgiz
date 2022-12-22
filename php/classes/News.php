@@ -1,5 +1,6 @@
 <?php
-class User{
+class User
+{
     public $id;
     public $title;
     public $body;
@@ -7,17 +8,22 @@ class User{
     public $date;
     public $tag;
 
-    
-    function addNews(){
+
+    function addNews()
+    {
         echo "added";
     }
-    function readNews(){
+    function readNews()
+    {
         echo "readed";
     }
-    function updateNews(){
+    function updateNews()
+    {
         echo "updated";
     }
-    function deleteNews(){
+    function deleteNews()
+    {
         echo "deleted";
     }
 
+}
