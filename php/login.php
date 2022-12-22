@@ -1,39 +1,39 @@
 <?php
+$email =  $_POST['email'];
+$password = $_POST['password'];
 
-class login {
-  public $form;
+//echo $email;
+//echo "<br>";
+//echo $password;
 
-  function set_form($form) {
-    $this->form = $form;
+
+$servername = "localhost";
+$userDb = "root";
+$passDb = "";
+$database = "test";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$database;", $userDb, $passDb);
+  // set the PDO error mode to exception
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  $sql = "SELECT COUNT(*) FROM register WHERE email = '$email' AND password = '$password'";
+if ($res = $conn->query($sql)) {
+
+  /* Check the number of rows that match the SELECT statement */
+  if ($res->fetchColumn() > 0) {
+    header('Location: /microgiz');
+    // echo "<script>window.location.href = '/microgiz'</script>";
   }
-  function get_form() {
-    return $this->form;
+
+  else {
+    header('Location: /microgiz/login.html');
+
+  //  echo "<script>window.location.href = '/microgiz/login.html'</script>";
   }
 }
 
-$LoginTittle = new login();
-$email = new login();
-$password = new login();
-$register = new login();
-
-
-$LoginTittle->set_form('aykay');
-$email->set_form('aykay@gmail.com');
-$password->set_form('Aykayy');
-$register->set_form('Register');
-
-echo "Login: " . $LoginTittle->get_form() . "<br>";
-echo "Email: " . $email->get_form() . "<br>";
-echo "Password: " . $password->get_form() . "<br>";
-echo "Register: " . $register->get_form();
-
-// $regForm = $_POST['username'];
-// $user = $_POST['username'];
-// $password = $_POST['password'];
-// echo $user."</br>";
-// echo $password."</br>";
-// echo $passwordAgain"</br>";
-// echo"<pre>";
-// var_dump($regForm);
-// echo "</pre>";
-?>
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
