@@ -2,7 +2,7 @@
 class Kalori{
 
     public $protein;
-    public $TotalLemak;
+    public $totalLemak;
     public $kalori;
     public $glukosa;
     public $natrium;
