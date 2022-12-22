@@ -25,9 +25,18 @@ class User{
 
     }
 
-    function createUser(){
-        
+    public static function getUser($username=NULL){
+        $database = new Database("localhost", "microgiz", "root", "");
+        $query = "SELECT * FROM `user`";
+        if($username!=NULL){
+            $query .= "WHERE username = ?";
+        }
+        $statement = $database->db->prepare($query);
+        $parameters = [$username];
+        $statement->execute($parameters);
+        return $statement->fetchAll();
     }
+
     function register(){
         echo "Email : ".$this->email. "</br>";
         echo "Password : ".$this->password. "</br>";
