@@ -37,5 +37,19 @@
 
     </div>
     <script src="javascript/submit.js">    </script>
+    <?php
+    require("User.php");
+    echo "<table border = 1>
+    <tr>
+        <td>name</td>
+        <td>username</td>
+        <td>password</td>
+    </tr>";
+
+    foreach (User::getUser() as $row);
+    echo"<tr><td>".$row['user']."<td><td>".$row['username']."<tr><td>".$row['password'];
+endforeach;
+echo "</table>";
+?>
 </body>
 </html>
