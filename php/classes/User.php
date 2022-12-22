@@ -16,6 +16,14 @@ class User{
     function login(){
         echo "login";
     }
+    function createUser($data){
+        $database = new Database('localhost', 'microgiz', 'root', '');
+        $query = "INSERT INTO `user` (`username`, `name`, `email`, `password`, `phone`)";
+        $state = $this -> db -> prepare($query);
+        $parameter = [$data -> username, $data -> name, $data -> email, $data -> password, $data -> phone];
+        return $state->execute($parameter);
+
+    }
 
     function register(){
         echo "Email : ".$this->email. "</br>";
