@@ -4,7 +4,7 @@ class User{
     public $name;
     private $email;
     private $password;
-    private $phone
+    private $phone;
 
 
     function __construct($emaill, $passwordd){
@@ -12,15 +12,14 @@ class User{
         $this->password = $passwordd;
 
     }
-    function
 
     function login(){
         echo "login";
     }
 
     function register(){
-        echo "Email: ".$this->email. "</br>";
-        echo "Password: ".$this->password. "</br>";
+        echo "Email : ".$this->email. "</br>";
+        echo "Password : ".$this->password. "</br>";
     }
 }
 
